@@ -1,0 +1,46 @@
+/* Pogo */
+
+div[data-pogo] { display: flex; flex-direction: column; justify-items: center; align-items: center; justify-content: center; }
+div[data-pogo] iframe { margin-left: auto; margin-right: auto; }
+div[data-pogo="main"], div[data-pogo="top"] { min-height: 100px; }
+div[data-pogo="footer"] { min-height: 250px; margin: 20px auto; }
+div[data-pogo="sidebar"] { display: block; width: 300px; min-height: 250px; }
+
+#stnext_top_rectangle { margin-bottom: 50px; }
+#stnext_lowerboard, #results_stnext_lowerboard { width: 970px; margin-left: -103px; margin-bottom: 10px; }
+#stnext_skyscraper { width: auto; min-width: 120px; }
+
+body.sthome #results_stnext_right_300x600, body.sthome #results_stnext_leaderboard, body.sthome #results_stnext_300x250, body.sthome #results_stnext_lowerboard { display: none; }
+body.stshare #results_stnext_right_300x600, body.stshare #results_stnext_leaderboard, body.stshare #results_stnext_300x250,
+body.stshare #stnext_lowerboard, body.stshare #stnext_bottom_rectangle { display: none; }
+body.stresults #stnext_skyscraper, body.stresults #stnext_leaderboard, body.stresults #stnext_lowerboard,
+body.stresults #stnext_top_rectangle, body.stresults #stnext_bottom_rectangle, body.stresults #st_mw_banner { display: none; }
+
+body.content-page div.pure-u-custom-ad-skyscraper, body.content-page div.pure-u-custom-ad-rectangle, body.content-page div.top-placeholder,
+body.content-page #stnext_lowerboard { display: none !important; }
+
+body.sthome #st_mw_eot { display: none; }
+#st_mw_banner { max-height: 100px; }
+body.pgDsbld div[data-pogo] { display: none !important; }
+
+.layout-mobile .result-area.result-area-ad { height: 280px; overflow: hidden; margin-bottom: 15px; }
+
+body.layout-mobile div.pre-fold { min-height: calc(100dvh - 10rem); }
+body.layout-mobile.stresults div.pre-fold { min-height: calc(100dvh - 6rem); }
+body.layout-mobile .mobile-test-complete .result-area-connection { position: relative; }
+#stnext_footer { display: none; }
+
+@media (min-width: 768px) {
+  #results_stnext_300x250 { min-width: 300px; min-height: 250px; }
+  #stnext_footer { width: 970px; position: relative; left: -73px; display: flex; }
+  footer.footer { min-height: 380px; }
+
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+  div.container { }
+  .pure-g div.pure-u-custom-ad-skyscraper { display: flex; justify-content: flex-end; }
+}
